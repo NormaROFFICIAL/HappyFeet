@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'TAN-PEARL-Regular';
+    src: url('C:\Users\Norma\AppData\Local\Microsoft\Windows\Fonts\TAN-PEARL-Regular.otf') format('otf');
+}
+/* Estilo personalizado para el carrusel */
+.custom-carousel {
+    max-width: 100px; /* Ajusta el ancho máximo del carrusel según sea necesario */
+    margin: auto; /* Centra el carrusel horizontalmente */
+    
+}
+
+/* Estilo personalizado para el texto del carrusel */
+.carousel-caption h5 {
+    font-family: 'TAN-PEARL-Regular';
+    font-size: 40px;
+    color: black;
+}
+.carousel-caption p {
+    color: black; /* Cambia el color del texto a negro */
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); /* Invierte los colores del icono para que sean negros */
+}
+
+
+.carousel-indicators button {
+    background-color: #000000 !important; /* Cambia el color de fondo de los botones */
+}
+
+
+

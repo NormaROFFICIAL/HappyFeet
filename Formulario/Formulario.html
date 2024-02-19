@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+
+
+
+</head>
+
+
+<body>
+    <h2>Formulario de registro</h2>
+    <hr>
+    <p>Proporcionar sus datos para quedar registrado como usuario,
+        los usuarios registrados pueden acceder a la tienda en
+        linea y recibir promociones especiales.
+    </p>
+
+
+    <fieldset>
+
+
+        <form action="pagina_receptora.php" method="get">
+            <legend>Registro</legend>
+            <p></p>
+            <label for="apellido"> Escriba sus apellidos * </label>
+            <input type="text" name="apellido" id="apellido" required>
+            <p></p>
+            <label for="nombre"> Escriba su nombre * </label>
+            <input type="text" name="nombre" id="nombre" required>
+            <p></p>
+            <label for="correo"> Escriba su correo electronico * </label>
+            <input type="email" name="correo" id="correo" required>
+            <P></P>
+            <label for="contrasena1"> Contraseña * </label>
+            <input type="password" name="contrasena1" id="contrasena1" required>
+            <P></P>
+            <label for="contrasena2"> Confirmar contraceña * </label>
+            <input type="password" name="contrasena2" id="contrasena2" required>
+            <P></P>
+            <P></P>
+            <label for=""> Genero * </label>
+            <input type="radio" name="genero" id="generomujer" value="mujer" required>
+            <label for="genero_mujer">Mujer</label>
+            <input type="radio" name="genero" id="generohombre" value="hombre" required>
+            <label for="genero_hombre">Hombre</label>
+            <input type="radio" name="genero" id="generootro" value="otro" required>
+            <label for="genero_otro">Otro</label>
+            <p></p>
+            <label for="fecha"> fecha de nacimiento * </label>
+            <input type="date" name="fecha" id="fecha" required>
+            <p></p>
+            <label for="text"> Color favorito * </label>
+            <input type="color" name="color" id="color" required>
+            <p></p>
+            <label for="talla"> Talla de calzado (cm) * </label>
+            <input type="number" name="talla" id="talla" min="1" max="40" required>
+            <p></p>
+            <label> Tipo de calzado preferido * </label>
+            <select name="tipos" id="tipos" multiple required>
+                <option value="botas">Botas</option>
+                <option value="tenis">Tenis</option>
+                <option value="zapatos">Zapatos</option>
+                <option value="sandalias">Sandalias</option>
+            </select>
+            <p></p>
+            <label for="formasdepago">Formas de pago * </label>
+            <input type="checkbox" name="pagotargeta" id="pagotarjeta" value="tarjeta" required>
+            <label for="pagotargeta">Tarjeta</label>
+            <input type="checkbox" name="pagoefectivo" id="pagoefectivo" value="efectivo" required>
+            <label for="pagoefectivo">Efectivo</label>
+            <input type="checkbox" name="pagocheque" id="pagocheque" value="cheque" required>
+            <label for="pagocheque">Cheque</label>
+
+
+
+
+            <p></p>
+            <input type="submit" value="  Registrar  ">
+    </fieldset>
+    </form>
+    <p></p>
+    <a href="../inicio.html">Inicio</a>
+
+
+</body>
+
+
+</html>

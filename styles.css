@@ -1,0 +1,73 @@
+body{
+    background-color: #eaeeef;
+}
+
+
+.imagen-centrada {
+  max-width: 15%; /* Define el ancho máximo de la imagen */
+}
+
+.image-container {
+  height: 20vh; /* Establece la altura del contenedor al 100% del viewport */
+  display: flex; /* Utiliza flexbox para alinear verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+.spotify-player-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px; /* Margen superior reducido */
+  margin-bottom: 50px; /* Margen inferior reducido */
+}
+
+.spotify-player-container iframe {
+  border-radius: 15px;
+  max-width: 100%; /* Asegura que el reproductor no exceda el ancho del contenedor */
+}
+/* Estilo para el contenedor */
+.container {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    text-align: center; /* Centra el contenido horizontalmente */
+  }
+  
+/* Estilo para los enlaces */
+nav a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #000000; /* Color del texto por defecto */
+    position: relative; /* Permite posicionar el pseudo-elemento ::after con respecto al enlace */
+    display: inline-block; /* Cambia el comportamiento a "bloque en línea" */
+    margin: 0 10px; /* Añade un margen entre los enlaces */
+    text-align: center; /* Centra el texto horizontalmente dentro del enlace */
+  }
+  
+  /* Estilo para la sombra cuando se pasa el cursor */
+  nav a:hover::after {
+    content: ''; /* Crea un pseudo-elemento */
+    position: absolute; /* Lo posiciona absolutamente con respecto al enlace */
+    left: 0;
+    bottom: -2px; /* La sombra aparecerá debajo del texto */
+    width: 100%; /* Ancho igual al del enlace */
+    height: 20px; /* Altura del rectángulo */
+    background-color: #00000046; /* Color del rectángulo */
+    z-index: -1; /* Asegura que esté detrás del texto */
+    opacity: 1; /* Hace el rectángulo visible */
+    transition: opacity 0.3s; /* Transición suave para la opacidad */
+  }
+  
+  /* Cambia el color del texto al pasar el cursor sobre el enlace */
+  nav a:hover {
+    color: black; /* Cambia el color del texto a negro */
+  }
+footer {
+  text-align: center;
+}
+
+
+
+
+
+  
+  
+  
+  
+  

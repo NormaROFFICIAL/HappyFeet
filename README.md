@@ -1,2 +1,2 @@
 # HappyFeet
-Zapateria proyecto
+ Zapateria.proyecto

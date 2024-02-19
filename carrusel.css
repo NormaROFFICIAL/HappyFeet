@@ -1,7 +1,10 @@
-@font-face {
-    font-family: 'TAN-PEARL-Regular';
-    src: url('C:\Users\Norma\AppData\Local\Microsoft\Windows\Fonts\TAN-PEARL-Regular.otf') format('otf');
-}
+.castoro-titling-regular {
+    font-family: "Castoro Titling", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 /* Estilo personalizado para el carrusel */
 .custom-carousel {
     max-width: 100px; /* Ajusta el ancho máximo del carrusel según sea necesario */
@@ -11,7 +14,7 @@
 
 /* Estilo personalizado para el texto del carrusel */
 .carousel-caption h5 {
-    font-family: 'TAN-PEARL-Regular';
+    font-family: '.castoro-titling-regular';
     font-size: 40px;
     color: black;
 }
@@ -30,5 +33,5 @@
     background-color: #000000 !important; /* Cambia el color de fondo de los botones */
 }
 
-
+/*te falta el padding*/
 

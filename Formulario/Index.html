@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+</head>
+
+<body>
+    <div class="container-form">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Bienvenido</h2>
+                <p>Para unirte a nuestra comunidad y adquirir descuentos exclusivos 
+                    y sugerencias personalizadas por favor inicia sesion con tus datos</p>
+                <input type="button" value="Iniciar Sesión">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Crear una cuenta</h2>
+                <div class="icons">
+                    <i class='bx bxl-google'></i>
+                    <i class='bx bxl-facebook' ></i>
+                    <i class='bx bxl-apple' ></i>
+                </div>
+                <p>O usa tu e-mail para registrarte</p>
+                <form class="form">
+                    <label>
+                        <i class='bx bx-user' ></i>
+                        <input type="text" placeholder="Apellidos">
+                        <input type="text" placeholder="Nombre completo">
+                    </label>
+                    <label>
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" placeholder="Correo electronico">
+                    </label>
+                    <label>
+                        <i class='bx bxs-lock-alt' ></i>
+                        <input type="password" placeholder="Contraseña">
+                        <input type="password" placeholder="Confirmar contraseña">
+                    </label>
+                    <div class="Gen">
+                    <label for=""> Genero * </label>
+                        <input type="radio" name="genero" id="generomujer" value="mujer" required>
+                    <label for="genero_mujer">Mujer</label>
+                        <input type="radio" name="genero" id="generohombre" value="hombre" required>
+                    <label for="genero_hombre">Hombre</label>
+                        <input type="radio" name="genero" id="generootro" value="otro" required>
+                    <label for="genero_otro">Otro</label>
+                    </div>
+                    <label for="fecha"> fecha de nacimiento * </label>
+                    <input type="date" name="fecha" id="fecha" required>
+                    <div class="talla-color-tipo">
+                        <label for="talla"> Talla de calzado (cm) * </label>
+                        <input type="number" name="talla" id="talla" min="1" max="40" required>
+                    
+                        <label for="color"> Color favorito * </label>
+                        <input type="color" name="color" id="color" required>
+                    
+                        <label for="tipos"> Tipo de calzado preferido * </label>
+                        <select name="tipos" id="tipos" multiple required>
+                            <option value="botas">Botas</option>
+                            <option value="tenis">Tenis</option>
+                            <option value="zapatos">Zapatos</option>
+                            <option value="sandalias">Sandalias</option>
+                        </select>
+                    </div>
+                    <div class="formas-de-pago">
+                        <label for="formasdepago">Formas de pago * </label>
+                        
+                        <div class="opciones-pago">
+                            <input type="checkbox" name="pagotargeta" id="pagotarjeta" value="tarjeta" required>
+                            <label for="pagotargeta">Tarjeta</label>
+                            
+                            <input type="checkbox" name="pagoefectivo" id="pagoefectivo" value="efectivo" required>
+                            <label for="pagoefectivo">Efectivo</label>
+                            
+                            <input type="checkbox" name="pagocheque" id="pagocheque" value="cheque" required>
+                            <label for="pagocheque">Cheque</label>
+                        </div>
+                    </div>
+                    
+                    <input type="submit" value="Registrarse">
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="/Inicio/Inicio.html">Inicio</a>
+    </footer>
+</body>
+
+
+</html>
